@@ -38,7 +38,7 @@ const KontakProses = ({data}) => {
                     <p>Anda belum memiliki permintaan pertemanan. </p>
                 </div>
                 <div className='row justify-content-center'>
-                    <ButtonUndangTeman mypage="proses" />
+                    <ButtonUndangTeman mypage="proses1" />
                 </div>
             </div>
         )
@@ -94,7 +94,7 @@ const KontakProses = ({data}) => {
             <button className='btn btn-primary w-100'>Undang Teman</button>
         </div> */}
         <div className='row justify-content-center'>
-            <ButtonUndangTeman mypage="proses" />
+            <ButtonUndangTeman mypage="proses2" />
         </div>
     </div>
   )

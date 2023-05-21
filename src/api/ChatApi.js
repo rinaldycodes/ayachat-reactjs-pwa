@@ -26,14 +26,28 @@ export const checkIsMember = async (chat_id,user_id) => {
 }
 
 
-export const sendChat = async (chat_id,user_id, message) => {
+export const sendChat = async (chat_id,user_id, message, chat_info) => {
 
     try {
         const currentTimestamp = Date.now();
         const currentTime = getCurrentTime();
 
         const user_login = await getCurrentUserInfo();
-        // console.log('user_login', user_login)
+        console.log('chat_info on send', chat_info)
+
+        if ( chat_info.group_type == 'private chat') {
+            const members = chat_info.members;
+            console.log('members on send', members[chat_info.user_1])
+            console.log('members2 on send', )
+
+            if ( members[chat_info.user_1] == undefined ) {
+                createGroupMember(chat_id, chat_info.user_2, 'members')
+            }
+
+            if ( members[chat_info.user_2] == undefined ) {
+                createGroupMember(chat_id, chat_info.user_2, 'members')
+            }
+        }
 
         set(ref(db_app, '/chat_app/chats/'+chat_id+'/messages/'+currentTimestamp), {
             message: message,

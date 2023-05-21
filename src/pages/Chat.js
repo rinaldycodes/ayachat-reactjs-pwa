@@ -52,7 +52,7 @@ const Chat = () => {
     }
 
     const handleSend = async () => {
-        const res = await sendChat(chat_id, user_id, message_x);
+        const res = await sendChat(chat_id, user_id, message_x, chat_info);
         set_message_x('');
     }
 

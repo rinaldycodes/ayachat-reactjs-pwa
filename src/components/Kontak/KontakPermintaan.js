@@ -15,7 +15,7 @@ const KontakPermintaan = ({data}) => {
                     <p>Anda belum melakukan permintaan teman ke siapapun. <br></br> Ayo kirim permintaan teman kesiapapun, dan buat hubungan baru. </p>
                 </div>
                 <div className='row justify-content-center'>
-                    <ButtonUndangTeman mypage="permintaan" />
+                    <ButtonUndangTeman mypage="permintaan1" />
                 </div>
             </div>
         )
@@ -62,7 +62,7 @@ const KontakPermintaan = ({data}) => {
         </div>
 
         <div className='row justify-content-center'>
-            <ButtonUndangTeman mypage="proses" />
+            <ButtonUndangTeman mypage="permintaan2" />
         </div>
     </div>
   )
