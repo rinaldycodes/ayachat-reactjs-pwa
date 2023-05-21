@@ -40,11 +40,10 @@ const Kontak = () => {
     
             if ( snapshotData ) {
                 const data = snapshotData;
-                console.log('data', data)
+                // console.log('data', data)
 
                 Object.keys(data).map( (key) => {
                     var dataKey = data[key];
-                    console.log('key', dataKey['status'])
                     if ( dataKey['status'] == 'requested') {
                         dataKey.alias_name = dataUser[dataKey.friend_id].alias_name
                         dataKey.point = dataUser[dataKey.friend_id].point
@@ -81,7 +80,7 @@ const Kontak = () => {
             }
     
             // console.log(array_accepted)
-            console.log('array_requested',array_requested)
+            // console.log('array_requested',array_requested)
             // console.log(array_awaiting)
         }
     }

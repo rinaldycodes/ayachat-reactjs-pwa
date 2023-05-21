@@ -48,9 +48,9 @@ const ButtonUndangTeman = ({mypage}) => {
     <>
         <div id='myButtonUndangTeman'  style={{
             position: 'absolute',
-            bottom: 0,
+            bottom: 35,
         }}>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target={`#popUndangTeman${mypage}`} aria-controls="popUndangTeman"
+            <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target={`#popUndangTeman${mypage}`} aria-controls="popUndangTeman"
                 style={{
                     width: 'inherit',
                 }}
@@ -58,16 +58,16 @@ const ButtonUndangTeman = ({mypage}) => {
                 Undang Teman
             </button>
         </div>
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id={`popUndangTeman${mypage}`} aria-labelledby="popUndangTemanLabel"
+        <div className="offcanvas offcanvas-bottom" tabIndex="-1" id={`popUndangTeman${mypage}`} aria-labelledby="popUndangTemanLabel"
             style={{
                 width: 'inherit'
             }}
         >
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="popUndangTemanLabel">Undang Teman</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div className="offcanvas-header">
+                <h5 className="offcanvas-title" id="popUndangTemanLabel">Undang Teman</h5>
+                <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body small">
+            <div className="offcanvas-body small">
                     
                     <div className='row'>
                         <div className='col-2 col-md mb-3'>
